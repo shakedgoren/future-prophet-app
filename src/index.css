@@ -1,0 +1,77 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        @apply bg-[#06060a] transition-colors duration-700;
+    }
+}
+
+@keyframes float {
+
+    0%,
+    100% {
+        transform: translateY(0) rotate(0);
+    }
+
+    50% {
+        transform: translateY(-10px) rotate(1deg);
+    }
+}
+
+@keyframes glow-pulse {
+
+    0%,
+    100% {
+        box-shadow: 0 0 20px rgba(217, 70, 239, 0.15);
+    }
+
+    50% {
+        box-shadow: 0 0 40px rgba(217, 70, 239, 0.3);
+    }
+}
+
+.glow-card {
+    @apply transition-all duration-500 border border-white/5;
+}
+
+.glow-card:hover {
+    @apply border-fuchsia-500/50 bg-white/[0.08] shadow-[0_0_60px_rgba(217, 70, 239, 0.25)];
+    transform: translateY(-6px) scale(1.01);
+}
+
+.input-glow {
+    @apply transition-all duration-300;
+}
+
+.input-glow:hover {
+    @apply shadow-[0_0_25px_rgba(217, 70, 239, 0.15)] border-fuchsia-500/20;
+}
+
+.input-glow:focus-within {
+    @apply ring-4 ring-fuchsia-500/10 border-fuchsia-500/50 bg-white/10;
+    box-shadow: 0 0 40px rgba(217, 70, 239, 0.2);
+}
+
+.placeholder-fade::placeholder {
+    @apply transition-all duration-300 opacity-10 text-white/50 italic;
+}
+
+.input-glow input {
+    font-weight: 700;
+}
+
+
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    @apply bg-white/10 rounded-full hover:bg-white/20;
+}

@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+body {
+  font-family: 'Varela Round', sans-serif;
+  background: radial-gradient(circle at top right, #1a0b2e 0%, #06060a 100%);
+  color: white;
+  margin: 0;
+}
+
+.glow-text {
+  text-shadow: 0 0 20px rgba(217, 70, 239, 0.4);
+}
+
+/* עיגול פינות אקסטרה לכל האלמנטים */
+input, select, button {
+  border-radius: 20px !important;
+}
