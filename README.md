@@ -3,7 +3,7 @@
 This repository contains the source code for the **Future Prophet App**, an entertaining, AI-powered web application that uses Google's Gemini LLM to "predict" users' futures.
 
 ## 🔗 Live Application
-- **Live Demo:** [Click Here to Visit](#)
+- **Live Demo:** [Click Here to Visit](https://future-prophet-app.netlify.app/)
 
 ## 🛠 Tech Stack
 - **Framework:** React 19, Vite
@@ -50,4 +50,4 @@ To run this application locally:
    ```
 5. The application will be available at `http://localhost:5173`.
 
-*Designed and Developed by [Shaked Goren](https://github.com/shakedgoren)*
+*Designed and Developed by [Shaked Liloz](https://github.com/shakedgoren)*
